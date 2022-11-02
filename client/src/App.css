@@ -1,41 +1,39 @@
 #root {
-  max-width: 1280px;
+  width: calc(100vw - 4rem);
+  height: calc(100vh - 4rem);
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #555;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.balance {
+  display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.balance button {
+  margin-left: 2rem;
 }
 
-.card {
-  padding: 2em;
+.transfer {
+  display: flex;
+  align-items: center;
 }
 
-.read-the-docs {
-  color: #888;
+.transfer input {
+  height: 20px;
+  padding: 5px 10px;
+  margin-left: 1rem;
+}
+
+.transfer button {
+  margin-left: 1rem;
 }
